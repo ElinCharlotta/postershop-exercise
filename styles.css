@@ -8,8 +8,8 @@ body {
 
 header{
     background-color: #3DE07E;
-    height: 608px;
-    width: ;
+    height: max-content;
+    width:1440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,6 +17,7 @@ header{
 }
 
 .ninjahead{
+    justify-self: center;
     
 }
 
@@ -25,22 +26,82 @@ nav{
     margin: 2rem;
 }
 
-main{
-    justify-content: center;
+main {
+    display: flex;
+    flex-direction: row;
     background-color: black;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
-    padding: 10pxrem;
-}
+    grid-row:20px;
+    margin-left: auto;
+    padding: 100px;
+  }
+
 
 .poster-pic {
-    width: 300px;
-    height: 300px;
+    align-self: center;
+    width: 312px;
+    height: 311px;}
+
+
+.poster-one {
+    grid-column: 1/span 3;
+    grid-row: 1/span 2;
 }
 
+.poster-two {
+    grid-column: 3/span 5  ;
+    grid-row: 1/span 2;
+}
 
+.poster-three {
+    grid-column: 5/span 7  ;
+    grid-row: 1/span 2;
+}
+
+.poster-four {
+    grid-column: 1/span 3 ;
+    grid-row: 2/span 3;
+}
+
+.poster-five {
+    grid-column: 3/span 5  ;
+    grid-row: 2/span 3;
+}
+
+.poster-six {
+    grid-column: 5/span 6  ;
+    grid-row: 2/span 3;
+}
+
+.poster-seven {
+    grid-column: 1/span 3  ;
+    grid-row: 3/span 4;
+}
+
+.poster-eight {
+    grid-column: 3/span 5  ;
+    grid-row: 3/span 4;
+}
+
+.poster-nine {
+    grid-column: 5/span 6  ;
+    grid-row: 3/span 4;
+}
+
+.poster-ten {
+    grid-column: 1/span 4  ;
+    grid-row: 4/span 5;
+}
+
+.poster-eleven {
+    grid-column: 4/span 6  ;
+    grid-row: 4/span 5;
+
+}
+
+/*Typografi*/
 h1 {
     font-size: 150px;
 }
@@ -49,4 +110,5 @@ h2{
 }
 p{
     color: aliceblue;
+    max-width: 300px;
 }
