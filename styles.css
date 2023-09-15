@@ -1,0 +1,52 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+
+
+header{
+    background-color: #3DE07E;
+    height: 608px;
+    width: ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ninjahead{
+    
+}
+
+nav{
+    align-self: flex-start;
+    margin: 2rem;
+}
+
+main{
+    justify-content: center;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10pxrem;
+}
+
+.poster-pic {
+    width: 300px;
+    height: 300px;
+}
+
+
+h1 {
+    font-size: 150px;
+}
+h2{
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
