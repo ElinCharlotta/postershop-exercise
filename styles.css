@@ -38,6 +38,7 @@ button {
 }
 
 .btn {
+    margin-top: 2rem;
     border-radius: 4px;
     margin-left: 16px;
     font-size: 16px;
@@ -156,7 +157,6 @@ footer{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2,1fr);
     column-gap: 16px;
-   
 }
 
 .social h3{
