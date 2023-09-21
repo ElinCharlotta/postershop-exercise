@@ -29,6 +29,7 @@ button {
     border-radius: 4px;
     background: #E83F57;
     color: #FFF;
+    width: 10rem;
     font-weight: 700;
     border-style: none;
     border-radius: 4px;
@@ -46,96 +47,29 @@ button {
 }
 
     /*Posters*/
-main  {
+.content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:32px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
-    display: grid;
-    row-gap: 26px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 543px);
-    width: 1000px;
-    padding: 100px;
-    padding-left: 150px;
-
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
 
-.poster-pic {
-    width: 312px;
-    height: 311px;
+.content .poster{
+    grid-column: auto/ span 2;    
 }
 
-.poster-one {
-    grid-column: 1/span 2;
-    grid-row: 1/span 2;
+.content .large {
+    grid-column: auto/ span 3;    
 
 }
 
-.poster-two {
-    grid-column: 3/span 5  ;
-    grid-row: 1/span 2;
-}
-
-.poster-three {
-    grid-column: 5/span 7  ;
-    grid-row: 1/span 2;
-}
-
-.poster-four {
-    grid-column: 1/span 3 ;
-    grid-row: 2/span 3;
-}
-
-.poster-five {
-    grid-column: 3/span 5  ;
-    grid-row: 2/span 3;
-}
-
-.poster-six {
-    grid-column: 5/span 6  ;
-    grid-row: 2/span 3;
-}
-
-.poster-seven {
-    grid-column: 1/span 3  ;
-    grid-row: 3/span 4;
-}
-
-.poster-eight {
-    grid-column: 3/span 5  ;
-    grid-row: 3/span 4;
-}
-
-.poster-nine {
-    grid-column: 5/span 6  ;
-    grid-row: 3/span 4;
-}
-
-
-
-.poster-ten, .poster-eleven {
-    background-color: rgb(248, 245, 245);
-    width: 484px;
-    height: 770px;
-}
-
-/*Footer Big pic*/
-.poster-pic-big {
-    width: 484px;
-    height: 484px;
-    flex-shrink: 0;
-}
-
-.poster-ten {
-    grid-column: 1/span 3  ;
-    grid-row: 4/span 5;
-}
-
-.poster-eleven {
-    grid-column: 4/span 6  ;
-    grid-row: 4/span 5;
-
+.content .poster img {
+    width: 100%;
 }
 
 
@@ -185,7 +119,6 @@ h2,.footer-pic-h2 {
 }
 p{
     color: aliceblue;
-    max-width: 310px;
     font-size: 18px;
     font-weight: 400;
 }
